@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+        Scanner A = new Scanner(System.in);
+        System.out.println("enter the first number");
+        // متغير رقمي
+        int a = A.nextInt();
+        System.out.println("enter second number");
+        int b = A.nextInt();
+        System.out.println("enter third number");
+        int c = A.nextInt();
+            // if else
+        if (c==b && b ==a)  {
+            System.out.println("eqaul numbers");}
+
+        else if(a>b && a >c){
+            System.out.println("largest number is "+a);
+
+        } else  if(b>a && b >c) {
+            System.out.println("largest number is " + b);
+        }  else if(c>a && c >b) {
+            System.out.println("largest number is " + c);
+
+        } else {
+            System.out.println("largest number is " + c);
+        }
+    }
+}
